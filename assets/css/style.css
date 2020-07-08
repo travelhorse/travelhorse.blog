@@ -1506,7 +1506,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top {
-  padding: 30px 0 0 0;
+  padding: 10px 0 0 0;
   /* background: #f5f8fd; */
 }
 
@@ -1536,6 +1536,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .social-links {
   justify-content: center; display: flex;
+  margin-top: 20px;
 }
 
 
@@ -1559,9 +1560,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 767px) {
   #footer .footer-top .social-links a {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1691,26 +1695,92 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1bb1dc;
 }
 
-#museums .php-email-form input {
-  padding: 20px 15px;
+#museums .php-email-form input, #museums .php-email-form textarea {
+  padding: 15px 10px;
+  font-size: 11px;
 }
 
-#museums .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-#musuems .php-email-form button[type="submit"] {
+/* #musuems .php-email-form button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
   padding: 8px 30px;
   color: #fff;
   transition: 0.3s;
-}
+} */
 
 #museums .php-email-form button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
+}
+
+.form-header {
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-style: oblique;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgba(237, 124, 71, 0.829);
+}
+
+.form-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-input-header {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  margin: 2px;
+  text-align: left;
+}
+
+.form-btn {
+  font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  border-color: #000;
+  transition: 0.5s;
+  color: #fff;
+  background: #ed7c47;
+  color: #fff;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-datetime-control {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 30%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-sub {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.radio {
+  font-size: 13px;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 4px;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1733,9 +1803,47 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
   color: #535074;
   font-size: 15px;
+}
+
+#footer .copyright a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#footer button  {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #footer .copyright {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  #footer .copyright a {
+    padding: 5px 10px;
+  }
+  
+  #footer button  {
+    padding: 5px 10px;
+  }  
+}
+
+#footer .copyright a:hover, , #footer .copyright button:hover {
+  color: #0a98c0;
 }
 
 #footer .credits {
@@ -1751,4 +1859,47 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .credits a:hover {
   color: #0a98c0;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    margin: 40% auto;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
