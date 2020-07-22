@@ -644,6 +644,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+.section-header h4 {
+  margin-bottom: 0;
+}
+
 .section-header p {
   text-align: center;
   margin: auto;
@@ -1841,7 +1845,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-top: 10px;
   color: #535074;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #footer .copyright a {
