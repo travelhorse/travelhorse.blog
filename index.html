@@ -113,7 +113,7 @@
           services</h4>
       </header>
     </div>
-    
+
     <div id="cta-for-mobile" class="get-started-btn for-mobile"><a href="https://www.travelhorse.co/en/get-started">Get
         Started!</a>
     </div>
@@ -181,6 +181,20 @@
 
   </main><!-- End #main -->
 
+  <!-- Cookie Policy Section -->
+  <div class="toast wow bounceInLeft" data-wow-duration="1.4s" id="myToast"
+    style="position: fixed; bottom: 75px; left: 15px; width: 175px;">
+    <div class="toast-header">
+      <strong class="mr-auto">Cookie Policy</strong>
+      <span class="ml-2 close" data-dismiss="toast">&times;</span>
+    </div>
+    <div class="toast-body">
+      By using our website, you are agreeing to our <a href="https://www.travelhorse.co/legal/cookie-policy">cookie
+        policy</a>.
+    </div>
+  </div>
+  <!-- End of Cookie Policy Section -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="section-bg">
     <div class="footer-top">
@@ -237,6 +251,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#myToast").toast({ autohide: false });
+      $("#myToast").toast('show');
+    });
+  </script>
 
 </body>
 
