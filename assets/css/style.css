@@ -1933,31 +1933,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 13% auto; /* 15% from the top and centered */
+  padding: 40px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
 }
 
-@media (max-width: 767px) {
-  .modal-content {
-    margin: 40% auto;
-  }
-}
-
-/* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+  text-align: right;
 }
 
 .accept {
@@ -1977,19 +1960,45 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .modal-content {
+    margin: 40% auto;
+  }
+}
+
 /* Modal for cookie policy notification */
 #cookie {
   z-index: 9999;
   align-self: center;
+  margin-bottom: 0;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
 }
 
 .cookie-modal {
-  margin: auto;
-  max-width: none;"
+  margin-bottom: 0;
+  max-width: none;
 }
 
+.cookie-dialog {
+  position:fixed;
+  top:auto;
+  right:auto;
+  left:auto;
+  bottom:0;
+  z-index: 9999;
+}  
+
 .cookie-content {
-  width: 70vw;
+  width: 50vw;
   align-self: center;
-  padding: 15px;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .cookie-content {
+    width: 90vw;
+  }
 }
