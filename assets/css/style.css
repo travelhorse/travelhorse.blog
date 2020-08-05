@@ -1022,7 +1022,14 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   margin: 0;
+  align-items: center;
 }
+
+/* #portfolio .portfolio-item .portfolio-wrap img {
+  align-self: center;
+  height: 200px;
+  width: 400px;
+} */
 
 #portfolio .portfolio-item .portfolio-wrap:hover img {
   opacity: 0.4;
