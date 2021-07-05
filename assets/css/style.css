@@ -232,15 +232,17 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
+
 
 .main-nav, .main-nav * {
   margin: 2px;
   padding: 0;
   list-style: none;
+}
+
+.nav-icon {
+  height: 25px;
+  vertical-align: middle;
 }
 
 .main-nav > ul > li {
@@ -340,8 +342,14 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: white;
   transition: 0.4s;
+}
+
+.mobile-nav .nav-icon {
+  height: 21px;
+  vertical-align: middle;
+  padding-bottom: 2px;;
 }
 
 .mobile-nav * {
@@ -353,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #065e77;
   padding: 10px 20px;
   font-weight: 500;
 }
@@ -1910,7 +1918,7 @@ h1, h2, h3, h4, h5, h6 {
   }  
 }
 
-#footer .copyright a:hover, , #footer .copyright button:hover {
+#footer .copyright a:hover, #footer .copyright button:hover {
   color: #0a98c0;
 }
 
