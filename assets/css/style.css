@@ -925,7 +925,8 @@ h1, h2, h3, h4, h5, h6 {
 #call-to-action {
   background: #2d2b46;
   background-size: cover;
-  padding: 40px 0;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
 #call-to-action .cta-title {
@@ -968,7 +969,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Features Section
 --------------------------------*/
 #features {
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 #features h4 {
@@ -1046,11 +1047,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-/* #portfolio .portfolio-item .portfolio-wrap img {
+.portfolio-wrap img , .member img{
   align-self: center;
   height: 200px;
   width: 400px;
-} */
+}
 
 .portfolio-item .portfolio-wrap:hover img {
   opacity: 0.4;
@@ -1143,6 +1144,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #testimonials .testimonial-item {
     text-align: center;
+  }
+
+  
+  .portfolio-wrap img , .member img {
+    align-self: center;
+    height: auto;
+    width: auto;
   }
 }
 
